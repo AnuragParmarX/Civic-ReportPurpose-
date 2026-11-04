@@ -24,7 +24,7 @@ at `http://localhost:5173`; change `CLIENT_ORIGIN` if needed.
 - `POST /api/uploads/issue-image` (authenticated citizen; JPG, PNG, or WebP up to 5 MB)
 - `GET /api/issues?page=1&limit=10&search=pothole&status=Reported&category=Roads%20%26%20Potholes`
 - `GET /api/issues/:id` (MongoDB `_id` or report identifier)
-- `POST /api/issues` (authenticated)
+- `POST /api/issues` (authenticated citizen only; administrators must use an administrator account for management)
 - `PATCH /api/issues/:id` (administrator)
 - `PATCH /api/issues/:id/status` (administrator)
 - `GET /api/admin/stats` (administrator)

@@ -87,6 +87,7 @@ router.post(
     handleValidationErrors,
   ],
   requireAuth,
+  requireRole("citizen"),
   createIssue,
 );
 router.get("/:id", [idRule, handleValidationErrors], optionalAuth, getIssue);

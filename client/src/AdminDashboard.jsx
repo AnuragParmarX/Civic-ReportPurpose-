@@ -128,7 +128,7 @@ function AdminDashboard({ token, onExpired }) {
   return (
     <section className="admin-dashboard">
       <div className="welcome-strip">
-        <div><span className="eyebrow">ACADEMIC ADMINISTRATOR WORKSPACE</span><h1>Report administration</h1><p>Review and update community submissions. This is a demonstration role, not a municipal office.</p></div>
+        <div><span className="eyebrow">MUNICIPAL WORKSPACE</span><h1>Report administration</h1><p>Review and update community submissions.</p></div>
       </div>
       {message && <p className="success-message" role="status">{message}</p>}
       {error && <p className="auth-error" role="alert">{error}</p>}

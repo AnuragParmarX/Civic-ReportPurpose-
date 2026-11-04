@@ -121,7 +121,7 @@ Open `http://localhost:5173`. The API is available at
 - `POST /api/auth/logout`
 - `GET /api/issues`
 - `GET /api/issues/:id`
-- `POST /api/issues` (authenticated)
+- `POST /api/issues` (authenticated citizen only; administrators cannot submit reports)
 - `POST /api/issues/:id/vote` (authenticated citizen)
 - `DELETE /api/issues/:id/vote` (authenticated citizen)
 - `POST /api/uploads/issue-image` (authenticated citizen, max 5 MB)
